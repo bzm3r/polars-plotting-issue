@@ -1,0 +1,28 @@
+[project]
+name = "polars-plotting-issue"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Brian Merchant", email = "bzm3r@proton.me" }
+]
+dependencies = [
+    "polars>=1.7.1",
+    "altair[all]>=5.4.1",
+    "jupyter>=1.1.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/polars_plotting_issue"]
